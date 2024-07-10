@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  .drawer {
+    border-radius: var(--radius-none, 0px);
+    box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.01),
+      0px 16px 32px 0px rgba(32, 32, 32, 0.08),
+      0px 32px 64px 0px rgba(32, 32, 32, 0.06);
+    background: #2d2d2d;
+    max-width: 1000px;
+    min-width: 1000px;
+
+    .drawer-title {
+      display: flex;
+      padding: var(--spacing-xlg, 32px) var(--spacing-huge, 64px);
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--color-content-body-primary, #fff);
+
+      h2 {
+        margin: 0;
+        font-family: "Geologica";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+      }
+    }
+
+    .drawer-body {
+      padding: var(--spacing-xlg, 32px) var(--spacing-huge, 64px);
+      .drawer-body-heading {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        h3 {
+          font-family: "Geologica";
+          color: var(--color-content-body-primary, #fff);
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 125%; /* 30px */
+        }
+
+        span {
+          display: flex;
+          height: var(--size-300, 24px);
+          min-width: 24px;
+          padding: var(--spacing-xsm, 8px);
+          justify-content: center;
+          align-items: center;
+          gap: var(--spacing-none, 0px);
+          border-radius: var(--radius-pill, 9999px);
+          background: var(--color-nonSemantic-red-border-default, #c82828);
+          color: var(--color-content-body-primary, #fff);
+
+          font-family: "Geologica";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
+
+img{
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+.card-document {
+  border-radius: 16px;
+  padding: 16px;
+  background: #3f3f3f;
+  min-width: 200px;
+  cursor: pointer;
+}
